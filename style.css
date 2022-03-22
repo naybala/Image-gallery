@@ -3,8 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 3rem;
+}
 .container{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+   max-width: 1600px;
+   padding: 50px 20px;
+   margin: 0 auto; 
+}
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+.galleryImage{
+    max-width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    transition: transform 300ms;
+    cursor: pointer;
+}
+.galleryImage:hover{
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 10px black;
 }
