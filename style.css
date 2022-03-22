@@ -31,3 +31,20 @@ h1{
     transform: translateY(-3px);
     box-shadow: 3px 3px 10px black;
 }
+#popup{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 250ms transform;
+    padding: 50px;
+}
+#selectedImage{
+    max-height: 100%;
+}

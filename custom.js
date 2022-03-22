@@ -10,6 +10,14 @@ imageIndexes.forEach(i => {
     img.classList.add('galleryImage');
     img.addEventListener('click', () => {
         //Pop up
+        selectedImage.src = `/images/img-${i}.jpg`;
+        popup.style.transform = `translateY(0%)`;
+
+    })
+    popup.addEventListener('click', () => {
+        popup.style.transform = `translateY(-100%)`;
+        popup.src = '';
+        popup.alt = '';
     })
     gallery.appendChild(img);
 });
